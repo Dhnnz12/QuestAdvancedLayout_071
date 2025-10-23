@@ -32,28 +32,28 @@ fun ActivitasPertama(modifier: Modifier){
         .fillMaxSize(),
     horizontalAlignment = Alignment.CenterHorizontally
     ){
-
         Text( stringResource( R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
         Text( stringResource( R.string.univ),
             fontSize = 22.sp)
-        Spacer(modifier = Modifier.height(height = 25.dp))
+        Spacer(modifier = Modifier.height( 25.dp))
         Card (modifier = Modifier
             .fillMaxWidth(fraction = 1f)
             .padding(all=12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.Black
-
+                containerColor = Color.Black // Black Color
             )) {
             Row() {
                 val gambar = painterResource(id = R.drawable.logo)
                 Image(
                     painter = gambar,
                     contentDescription = null,
-                    modifier = Modifier.size(
-                        size = 100.dp
-                    ).padding(all = 5.dp)
+                    modifier = Modifier
+                        .size(
+                            size = 100.dp
+                        )
+                        .padding(all = 5.dp)
                 )
                 Spacer(modifier = Modifier.width(width = 30.dp))
                 Column() {
@@ -70,6 +70,98 @@ fun ActivitasPertama(modifier: Modifier){
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
                     )
+                }
+            }
+        }
+                    Card (modifier = Modifier
+                        .fillMaxWidth(fraction = 1f)
+                        .padding(horizontal = 12.dp, vertical = 6.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color.Blue // Blue Color
+                        )) {
+                        Row() {
+                            val gambar = painterResource(id = R.drawable.logo)
+                            Image(
+                                painter = gambar,
+                                contentDescription = null,
+                                modifier = Modifier
+                                    .size(
+                                        size = 100.dp
+                                    )
+                                    .padding(all = 5.dp)
+                            )
+                            Spacer(modifier = Modifier.width(width = 30.dp))
+                            Column() {
+                                Text(
+
+                                    text = stringResource(id = R.string.nama2),
+                                    fontSize = 30.sp,
+                                    fontFamily = FontFamily.Cursive,
+                                    color = Color.White,
+                                    modifier = Modifier.padding(top = 10.dp)
+                                )
+                                Text(
+
+                                    text = stringResource(id = R.string.handphone),
+                                    fontSize = 20.sp,
+                                    color = Color.Yellow,
+                                    modifier = Modifier.padding(top = 5.dp)
+                                )
+                                Text(
+
+                                    text = stringResource(id = R.string.alamat2),
+                                    fontSize = 20.sp,
+                                    color = Color.White,
+                                    modifier = Modifier.padding(bottom = 10.dp)
+                                )
+                            }
+                        }
+                    }
+                    Card (modifier = Modifier
+                        .fillMaxWidth(fraction = 1f)
+                        .padding(horizontal = 12.dp, vertical = 6.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color(0xFF2F793F) // Green Color, slightly darker to match image
+                        )) {
+                        Row() {
+                            val gambar = painterResource(id = R.drawable.logo)
+                            Image(
+                                painter = gambar,
+                                contentDescription = null,
+                                modifier = Modifier
+                                    .size(
+                                        size = 100.dp
+                                    )
+                                    .padding(all = 5.dp)
+                            )
+                            Spacer(modifier = Modifier.width(width = 30.dp))
+                            Column() {
+                                Text(
+
+                                    text = stringResource(id = R.string.nama3),
+                                    fontSize = 30.sp,
+                                    fontFamily = FontFamily.Cursive,
+                                    color = Color.White,
+                                    modifier = Modifier.padding(top = 10.dp)
+                                )
+                                Text(
+
+                                    text = stringResource(id = R.string.handphone2),
+                                    fontSize = 20.sp,
+                                    color = Color.Yellow,
+                                    modifier = Modifier.padding(top = 5.dp)
+                                )
+                                Text(
+
+                                    text = stringResource(id = R.string.alamat3),
+                                    fontSize = 20.sp,
+                                    color = Color.White,
+                                    modifier = Modifier.padding(bottom = 10.dp)
+                                )
+                            }
+                        }
+                    }
+
                     Box(
                         modifier = Modifier
                             .fillMaxSize()
@@ -83,8 +175,5 @@ fun ActivitasPertama(modifier: Modifier){
                     }
                 }
             }
-        }
-    }
-}
 
 
