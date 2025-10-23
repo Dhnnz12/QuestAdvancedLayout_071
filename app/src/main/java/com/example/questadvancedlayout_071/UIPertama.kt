@@ -1,6 +1,7 @@
 package com.example.questadvancedlayout_071
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -67,6 +68,10 @@ fun ActivitasPertama(modifier: Modifier){
                         fontSize = 20.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Box(
+                        modifier = Modifier
+                            .fillMaxSize()
                     )
 
         }
