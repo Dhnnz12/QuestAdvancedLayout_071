@@ -46,13 +46,14 @@ fun ActivitasPertama(modifier: Modifier){
                 containerColor = Color.Black
 
             )) {
-            Row () {
+            Row() {
                 val gambar = painterResource(id = R.drawable.logo)
                 Image(
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier.size(
-                        size = 100.dp).padding(all = 5.dp)
+                        size = 100.dp
+                    ).padding(all = 5.dp)
                 )
                 Spacer(modifier = Modifier.width(width = 30.dp))
                 Column() {
@@ -72,14 +73,18 @@ fun ActivitasPertama(modifier: Modifier){
                     Box(
                         modifier = Modifier
                             .fillMaxSize()
-                    ){
+                    ) {
                         Text(
                             text = stringResource(id = R.string.copy),
                             modifier = Modifier
                                 .align(Alignment.BottomCenter)
                                 .padding(bottom = 50.dp)
+                        )
                     }
-
+                }
+            }
         }
+    }
+}
 
 
